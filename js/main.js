@@ -177,6 +177,10 @@ $(window).load(function () {
 
 }); // window load end 
 
+//Download CV
+function openPDF(pdfURL) {
+    window.open(pdfURL, "_blank")
+}
 
 
 

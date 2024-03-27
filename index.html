@@ -81,8 +81,8 @@
                     </ul>
                     <div class="col-md-12">
                         <button class="site-btn icon">
-                            <a href="/pdf/CV_TẠ_NGỌC_ĐẠI_JP.docx" download="CV_TẠ_NGỌC_ĐẠI_JP.docx">
-                                Download Cv
+                            <a onclick="openPDF('/pdf/CV_TẠ_NGỌC_ĐẠI_JP.docx')">
+                                Download CV
                             </a>
                             <i class="fa fa-download" aria-hidden="trDowue"></i>
                         </button>
@@ -108,7 +108,7 @@
                                             <h2>Giới Thiệu Bản Thân</h2>
                                         </div>
                                         <p class="top_30">
-                                            <br/>Tôi có khoảng hơn 1 năm kinh nghiệm làm về lập trình web thông qua việc học và làm dự án thực tế. Tôi có kiến thức về HTML, CSS, Javascript, PHP, OOP, MYSQL, Laravel
+                                            <br/>Tôi có hơn 6 tháng kinh nghiệm làm việc với các dự án tiếng Nhật và có khoảng hơn 1.5 năm kinh nghiệm làm về lập trình web thông qua việc học và làm dự án thực tế. Tôi có kiến thức về HTML, CSS, Javascript, PHP, OOP, MYSQL, Laravel
                                             <br/>Có kinh nghiệm làm việc với git trong dự án, có kinh nghiệm xử lý conflict code và một số vấn đề liên quan đến git
                                             <br/>Là người sẵn sàng học hỏi cái mới và luôn sẵn sàng tìm hiểu công nghệ mới nếu công ty hoặc dự án yêu cầu
                                             <br/>Ngoài ra, tôi có kỹ năng phân tích vấn đề, tìm hiểu và fix bug
@@ -146,31 +146,19 @@
                                                 </div>
                                             </li>
                                             <li>
-                                                <h3>CSS</h3>
-                                                <div class="progress">
-                                                    <div class="percentage" style="width:100%;"></div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <h3>Javascript</h3>
-                                                <div class="progress">
-                                                    <div class="percentage" style="width:100%;"></div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <h3>HTML</h3>
-                                                <div class="progress">
-                                                    <div class="percentage" style="width:100%;"></div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <h3>MySQL</h3>
-                                                <div class="progress">
-                                                    <div class="percentage" style="width:100%;"></div>
-                                                </div>
-                                            </li>
-                                            <li>
                                                 <h3>Laravel</h3>
+                                                <div class="progress">
+                                                    <div class="percentage" style="width:100%;"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h3>AWS Cơ Bản</h3>
+                                                <div class="progress">
+                                                    <div class="percentage" style="width:100%;"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h3>HTML / CSS / JAVASCRIPT</h3>
                                                 <div class="progress">
                                                     <div class="percentage" style="width:100%;"></div>
                                                 </div>
@@ -183,13 +171,13 @@
                                         </div>
                                         <ul class="skill-list">
                                             <li>
-                                                <h3>Bằng JLPT N3 (T12-2022)</h3>
+                                                <h3>JLPT N2 (T12-2023)</h3>
                                                 <div class="progress">
                                                     <div class="percentage" style="width:100%;"></div>
                                                 </div>
                                             </li>
                                             <li>
-                                                <h3>Đọc hiểu Tiếng anh chuyên ngành IT cơ bản</h3>
+                                                <h3>Đọc hiểu Tiếng anh CNTT</h3>
                                                 <div class="progress">
                                                     <div class="percentage" style="width:100%;"></div>
                                                 </div>
@@ -198,11 +186,11 @@
                                     </section>
                                     <section class="code-skills col-md-4 padding_60">
                                         <div class="section-title bottom_45"><span></span>
-                                            <h2>Các tool khác</h2>
+                                            <h2>Công cụ làm việc</h2>
                                         </div>
                                         <ul class="skill-list">
                                             <li>
-                                                <h3>Slack</h3>
+                                                <h3>Redmine</h3>
                                                 <div class="progress">
                                                     <div class="percentage" style="width:100%;"></div>
                                                 </div>
@@ -214,7 +202,13 @@
                                                 </div>
                                             </li>
                                             <li>
-                                                <h3>Jira</h3>
+                                                <h3>Slack</h3>
+                                                <div class="progress">
+                                                    <div class="percentage" style="width:100%;"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h3>Google Chat</h3>
                                                 <div class="progress">
                                                     <div class="percentage" style="width:100%;"></div>
                                                 </div>
@@ -238,6 +232,34 @@
                                         <div class="row">
                                             <!-- Working History -->
                                             <div class="working-history col-md-12 padding_15 padbot_30">
+                                                <ul class="timeline col-md-12 top_30">
+                                                    <li><i class="fa fa-suitcase" aria-hidden="true"></i>
+                                                        <h2 class="timeline-title">Kinh nghiệm làm việc</h2>
+                                                    </li>
+                                                    <li>
+                                                        <h3 class="line-title">Lập trình viên Tiếng Nhật - Caerux Lab Co., Ltd </h3>
+                                                        <span>T12/2023 - T6/2024</span>
+                                                        <p class="little-text"><strong>Role</strong>: Trao đổi yêu cầu, báo cáo tiến độ với khách hàng và phát triển chức năng của dự án</p><br/>
+                                                        <p class="little-text"><strong>Project Number</strong> : 2</p><br/>
+                                                        <p class="little-text"><strong>Description</strong> :
+                                                            Tôi là cầu nối trực tiếp của dự án, thực hiện việc dịch và trao đổi các yêu cầu từ khách hàng đến đội phát triển. 
+                                                            Sau đó thực hiện việc kiểm tra và đánh giá tiến độ task trước khi tới tay khách hàng. Các dự án tôi được phân công
+                                                            quản lý đều được truyền tải đúng và đủ, do vậy dự án vẫn luôn được tiến triển đúng tiến độ. <br/>
+                                                            Trong quá trình tham gia với vai trò lập trình viên, tôi đã hoàn thành việc dịch yêu cầu được gửi từ bên Nhật và hoàn thành việc update lớn 
+                                                            của 1 dự án maintainance bằng framework Laravel, bao gồm phát triển chức năng CMS, fix bug liên quan và sửa giao diện theo yêu cầu. Do vậy, dự án coding mà tôi tham gia cũng 
+                                                            được đảm bảo về tiến độ.
+                                                        </p><br/>
+                                                        <p class="little-text tag-group">
+                                                            <span class="tags">Công nghệ sử dụng:</span>
+                                                            <span class="tags">PHP</span>
+                                                            <span class="tags">Laravel</span>
+                                                            <span class="tags">HTML/CSS/Javascript</span>
+                                                            <span class="tags">Docker</span>
+                                                            <span class="tags">Github / Redmine / Google Chat</span>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+
                                                 <ul class="timeline col-md-12 top_30">
                                                     <li><i class="fa fa-suitcase" aria-hidden="true"></i>
                                                         <h2 class="timeline-title">Kinh nghiệm làm việc</h2>
